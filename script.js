@@ -6,7 +6,7 @@ window.addEventListener("load", function () {
 
 function elemekElerese1() {
     /**Ide jön az első feladat */
-    ELEM1=document.querySelectorAll("section h2")[0]
+    const ELEM1=document.querySelectorAll("section h2")[0]
     console.log(ELEM1);
 }
 function elemekElerese2() {
@@ -18,7 +18,7 @@ function elemekElerese2() {
 }
 function elemekElerese3() {
     /**Ide jön az 3. feladat */
-    ELEM3=document.getElementsByClassName("ide");
+    const ELEM3=document.getElementsByClassName("ide");
     ELEM3.innerHTML="<p>Jó reggelt! <p>";
 }
 
