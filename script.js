@@ -39,5 +39,13 @@ function elemekElerese4() {
 
 
 function elemekFormazas1(){
+    /*Ide jön az 5. feladat*/
     
+}
+
+function esemenykezeles1(){
+    const ELEM6= document.querySelectorAll(".lista")[0];
+    ELEM6.addEventListener("onClick", elemekElerese4)
+    document.getElementById("myBtn");
+    element.addEventListener("click", myFunction);
 }
