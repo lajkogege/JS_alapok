@@ -4,6 +4,8 @@ window.addEventListener("load", function () {
     elemekElerese3();
     elemekElerese4();
     elemekFormazas1();
+    esemenykezeles2();
+    Esemenykezeles3()
 });
 
 function elemekElerese1() {
@@ -46,6 +48,49 @@ function elemekFormazas1(){
 }
 
 function esemenykezeles1(){
-    const ELEM6= document.querySelectorAll(".lista")[0];
-    
+    const ELEM6= document.querySelector(".lista")[0];
+    ELEM6.addEventListener("click", fveny);
+}
+
+function fveny(){
+    let txt="";
+    const ELEMSOK =document.getElementsByClassName(".kattintasutan").innerHTML= txt;
+}
+
+function esemenykezeles2(){
+    const ELEM7 =document.querySelector(".feladat");
+    let txt="";
+    txt+=`
+    <button>OK</button>
+    `
+    ELEM7.innerHTML=txt;
+    console.log(ELEM7);
+    const ELEM8=document.querySelector(".feladat button")
+    ELEM8.addEventListener("click", fveny2)
+}
+
+function fveny2(){
+    const ELEM9 =document.querySelector(".feladat")
+    let txt="";
+    txt+=`
+    <div>
+    <img class="kep" scr="csonak.png" alt="">
+    </div>`
+    ELEM9.innerHTML+=txt;
+}
+
+function Esemenykezeles3(){
+    const ELEM10 =document.querySelectorAll(".feladat");
+    ELEM10.addEventListener("mousemove", fveny3);
+
+}
+
+function fveny3(){
+    const ELEM11=document.querySelectorAll(".kep");
+    ELEM11.classList.add(".kepmeret");
+
+}
+
+function Esemenykezeles4(){
+
 }
